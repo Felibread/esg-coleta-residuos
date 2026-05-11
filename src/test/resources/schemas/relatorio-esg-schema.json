@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RelatorioESGResponse",
+  "type": "object",
+  "required": [
+    "totalPontosAtivos",
+    "totalColetasRealizadas",
+    "totalPesoColetadoKg",
+    "mediaPesoColetadoKg",
+    "coletasConcluidas",
+    "coletasPendentes",
+    "impactoAmbiental",
+    "co2EvitadoKg"
+  ],
+  "properties": {
+    "totalPontosAtivos": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "totalColetasRealizadas": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "totalPesoColetadoKg": {
+      "type": "number",
+      "minimum": 0
+    },
+    "mediaPesoColetadoKg": {
+      "type": "number",
+      "minimum": 0
+    },
+    "coletasConcluidas": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "coletasPendentes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "impactoAmbiental": {
+      "type": "string"
+    },
+    "co2EvitadoKg": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

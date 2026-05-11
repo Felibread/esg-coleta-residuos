@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PontoColetaResponse",
+  "type": "object",
+  "required": ["id", "nome", "tipoResiduo", "endereco", "capacidadeKg", "ativo"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Identificador único do ponto de coleta"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "description": "Nome do ponto de coleta"
+    },
+    "tipoResiduo": {
+      "type": "string",
+      "enum": ["PLASTICO", "VIDRO", "METAL", "PAPEL", "ORGANICO", "ELETRONICO"],
+      "description": "Tipo de resíduo aceito"
+    },
+    "endereco": {
+      "type": "string",
+      "description": "Endereço do ponto de coleta"
+    },
+    "capacidadeKg": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Capacidade em quilogramas"
+    },
+    "ativo": {
+      "type": "boolean",
+      "description": "Indica se o ponto está ativo"
+    }
+  },
+  "additionalProperties": false
+}

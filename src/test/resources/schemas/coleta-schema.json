@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ColetaResponse",
+  "type": "object",
+  "required": ["id", "pontoColetaId", "nomePontoColeta", "tipoResiduo", "dataColeta", "pesoColetadoKg", "responsavel", "status"],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "pontoColetaId": {
+      "type": "integer"
+    },
+    "nomePontoColeta": {
+      "type": "string"
+    },
+    "tipoResiduo": {
+      "type": "string",
+      "enum": ["PLASTICO", "VIDRO", "METAL", "PAPEL", "ORGANICO", "ELETRONICO"]
+    },
+    "dataColeta": {
+      "type": "string",
+      "description": "Data no formato ISO (YYYY-MM-DD)"
+    },
+    "pesoColetadoKg": {
+      "type": "number",
+      "minimum": 0
+    },
+    "responsavel": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["AGENDADA", "EM_ANDAMENTO", "CONCLUIDA", "CANCELADA"]
+    },
+    "observacoes": {
+      "type": ["string", "null"]
+    }
+  }
+}
