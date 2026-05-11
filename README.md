@@ -113,7 +113,7 @@ docker --version
 
 ### 1. Clonar o Repositório
 ```bash
-git clone https://github.com/seu-usuario/esg-coleta-residuos.git
+git clone https://github.com/Felibread/esg-coleta-residuos.git
 cd esg-coleta-residuos
 ```
 
@@ -330,5 +330,6 @@ Este projeto demonstra como a automação de testes contribui diretamente para o
 ---
 
 *Desenvolvido como projeto acadêmico — Fase de Testes Automatizados — ESG & Sustentabilidade*
-#   e s g - c o l e t a - r e s i d u o s  
+#   e s g - c o l e t a - r e s i d u o s 
+ 
  
